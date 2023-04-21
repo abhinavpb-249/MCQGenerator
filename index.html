@@ -1,0 +1,311 @@
+
+
+<p> You can use the <a href="#questioncreator">question generator</a> given below to make your website more interactive. 
+<br /> A demo is given below :
+</p>
+
+ <!-- Demo -->
+ 
+  <div style="background:white;"> <p> Javascript is an _______ language? </p> <div id="1Abox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" > <input id="1Ainput" name="option" type=radio onclick='show("1Ainput","1Abox", "1Abox","1correctexp")'> <label for="1Ainput"> Object-Oriented </label> </div> <div id="1Bbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" > <input id="1Binput" name="option" type=radio onclick='show("1Binput", "1Bbox", "1Abox","1wrongexp")' > <label for="1Binput"> Object Based </label> </div> <div id="1Cbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" > <input id="1Cinput" name="option" type=radio onclick='show("1Cinput","1Cbox","1Abox","1wrongexp")'> <label for="1Cinput"> Procedural </label> </div> <div id="1Dbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" > <input id="1Dinput" name="option" type=radio onclick='show("1Dinput","1Dbox","1Abox","1wrongexp")'> <label for="1Dinput">None of the above </label> </div> <div id="1correctexp" style="background:white; display:none; " > Correct </div> <div id="1wrongexp" style="background:white; display:none; " > Wrong </div> <script type="text/javascript" language="javascript" charset="utf-8"> function show(input,Wbox,Cbox,exp) { var answer = document.getElementById(input); var x = document.getElementById(exp); if(answer.checked==true) { document.getElementById(Wbox).style.backgroundColor="#FAA0A0"; document.getElementById(Cbox).style.backgroundColor="#b0f8b0";} if (x.style.display==="none") { x.style.display = "block";} } </script> 
+ 
+ <!-- Demo -->
+
+<h2> How to do this?</h2>
+<p> It's very simple.
+  <br />Just fill in the fields given below ,then an <b>html</b> code will be generated.You can copy and paste that in your blog
+ </p>
+ <p> If you are using <b>wordpress</b>, switch to code editor(by clicking the three dots on above right) before pasting the code.
+ <br /> 
+  if you are using <b>blogger</b>, switch to html-view (by clicking the pencil icon on the above left corner) before pasting the code.</p>
+
+<h2 id="questioncreator"> Question no.<span class="one">1</span> </h2>
+
+<p>
+  <input id="question" onblur="if(this.value==''){ this.value='Type your question here...'; this.style.color='#BBB';}" onfocus="if(this.value=='Type your question here...'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;" type="text" value="Type your question here..." /> </p>
+
+
+<p><label>A)</label>
+  <input id="firstoption" onblur="if(this.value==''){ this.value='Option A'; this.style.color='#BBB';}" onfocus="if(this.value=='Option A'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;" type="text" value="Option A" /></p>
+
+
+<p><label>B)</label>
+  <input id="secondoption" onblur="if(this.value==''){ this.value='Option B'; this.style.color='#BBB';}" onfocus="if(this.value=='Option B'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;" type="text" value="Option B" />
+       
+</p>
+
+<p><label>C)</label>
+  <input id="thirdoption" onblur="if(this.value==''){ this.value='Option C'; this.style.color='#BBB';}" onfocus="if(this.value=='Option C'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;" type="text" value="Option C" /></p>
+
+
+<p><label>D)</label>
+  <input id="fourthoption" onblur="if(this.value==''){ this.value='Option D'; this.style.color='#BBB';}" onfocus="if(this.value=='Option D'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;" type="text" value="Option D" /></p>
+
+<p>Which is the correct answer? </p>
+
+
+<p><label>
+  <input id="Aiscorrect" name="option" type="radio" /> option A is correct</label></p>
+
+<p><label>
+  <input id="Biscorrect" name="option" type="radio" />option B is correct </label></p>
+
+<p><label>
+  <input id="Ciscorrect" name="option" type="radio" />option C is correct </label></p>
+
+<p><label>
+  <input id="Discorrect" name="option" type="radio" /> option D is correct</label></p>
+
+
+ <p><label> Text to show if the user selects the correct answer(Optional):</label> 
+<input id="1correctexp" type="text" /></p>
+
+ <p><label> Text to show if the user selects the wrong answer(Optional):</label> 
+<input id="1wrongexp" type="text" /></p>
+
+
+<button onclick="showhtml()" style="background: green; color: white;"> Done </button>
+
+
+<hr />
+
+<div id="html" style="display: none;">
+ 
+  <p> Copy and paste this html code to your blog:</p>
+
+
+  
+ 
+
+<div class="scroll" id="htmloutput">
+
+&lt;div style="background:white;"&gt; 
+
+&lt;p&gt;<span id="questioncode"></span> &lt;/p&gt;  
+
+  
+&lt;div id="<span class="one">1</span>Abox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" &gt;
+&lt;input id="<span class="one">1</span>Ainput" name="option" type=radio  onclick='show("<span class="one">1</span>Ainput","<span class="one">1</span>Abox", "<span id="1Acorrectbox"></span>","<span id="1Aexp"></span>")'&gt;
+&lt;label for="<span class="one">1</span>Ainput"&gt;
+  
+  <span id="optionAcode"> </span>
+&lt;/label&gt;
+&lt;/div&gt; 
+
+&lt;div id="<span class="one">1</span>Bbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" &gt;
+&lt;input id="<span class="one">1</span>Binput" name="option" type=radio  onclick='show("<span class="one">1</span>Binput", "<span class="one">1</span>Bbox", "<span id="1Bcorrectbox"></span>","<span id="1Bexp"></span>")' &gt;
+&lt;label for="<span class="one">1</span>Binput"&gt;
+
+<span id="optionBcode"> </span>
+&lt;/label&gt;
+&lt;/div&gt; 
+
+&lt;div id="<span class="one">1</span>Cbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" &gt;
+&lt;input id="<span class="one">1</span>Cinput" name="option" type=radio onclick='show("<span class="one">1</span>Cinput","<span class="one">1</span>Cbox","<span id="1Ccorrectbox"></span>","<span id="1Cexp"></span>")'&gt;
+&lt;label for="<span class="one">1</span>Cinput"&gt;
+ <span id="optionCcode"></span>  
+&lt;/label&gt;
+&lt;/div&gt; 
+
+
+&lt;div id="<span class="one">1</span>Dbox" style="background:white; font-size:20px;padding:10px;border: 2px solid black;" &gt;
+&lt;input id="<span class="one">1</span>Dinput" name="option" type=radio onclick='show("<span class="one">1</span>Dinput","<span class="one">1</span>Dbox","<span id="1Dcorrectbox"></span>","<span id="1Dexp"></span>")'&gt;
+&lt;label for="<span class="one">1</span>Dinput"&gt;<span id="optionDcode"> </span> &lt;/label&gt;
+&lt;/div&gt;
+
+
+
+&lt;div  id="<span class="one">1</span>correctexp" style="background:white; display:none; "  &gt;
+
+<span id="1correctexpcode"> </span>  
+
+&lt;/div&gt;
+
+&lt;div  id="<span class="one">1</span>wrongexp" style="background:white; display:none; "  &gt;
+
+
+<span id="1wrongexpcode"> </span>  
+
+
+
+&lt;/div&gt;
+    
+&lt;script type="text/javascript" language="javascript" charset="utf-8"&gt;
+
+        
+function show(input,Wbox,Cbox,exp)
+      {
+      var answer = document.getElementById(input);
+      var x = document.getElementById(exp);   
+        if(answer.checked==true)
+ {       document.getElementById(Wbox).style.backgroundColor="#FAA0A0";
+        document.getElementById(Cbox).style.backgroundColor="#b0f8b0";}
+       
+        if (x.style.display==="none") 
+  {
+   x.style.display = "block";}
+      }  
+ 
+  
+&lt;/script&gt;   
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+</div>
+
+ <button id="nextbutton" onclick="change()" style="display: none;">
+   <a href="#questioncreator">Add another question</a> </button>
+
+
+
+<script charset="utf-8" language="javascript" type="text/javascript">
+
+
+  
+var n = 1;  
+  
+function change() {
+ 
+ n++;
+var items = document.getElementsByClassName("one");   for (var i=0; i < items.length; i++)    {items[i].innerHTML = n ;}    
+
+  var code=document.getElementById("html");
+ if (code.style.display === "block") {
+code.style.display = "none";
+ }
+
+var next=document.getElementById("nextbutton");  
+  
+if (next.style.display === "block") {
+next.style.display = "none";
+ }
+  
+
+}  
+  
+  function showhtml() 
+  {
+   var code=document.getElementById("html");
+ if (code.style.display === "none") {
+code.style.display = "block";
+ }
+    
+var next=document.getElementById("nextbutton");
+ if (next.style.display === "none") {
+next.style.display = "block";
+ }
+    
+   var ques=document.getElementById("question").value;
+    document.getElementById("questioncode").innerHTML = ques;
+    
+    
+    var opa=document.getElementById("firstoption").value;
+    document.getElementById("optionAcode").innerHTML = opa;
+    
+    
+    var opb=document.getElementById("secondoption").value;
+    document.getElementById("optionBcode").innerHTML = opb;
+     
+    
+    var opc=document.getElementById("thirdoption").value;
+    document.getElementById("optionCcode").innerHTML = opc;
+    
+    var opd=document.getElementById("fourthoption").value;
+    document.getElementById("optionDcode").innerHTML = opd;
+    
+     var opA = document.getElementById("Aiscorrect");   
+        if(opA.checked==true)
+        {document.getElementById("1Acorrectbox").innerHTML = n+"Abox";
+        document.getElementById("1Bcorrectbox").innerHTML =n+"Abox";
+        document.getElementById("1Ccorrectbox").innerHTML = n+"Abox";
+        document.getElementById("1Dcorrectbox").innerHTML =n+"Abox";}
+       
+     var opB = document.getElementById("Biscorrect");   
+        if(opB.checked==true)
+        { document.getElementById("1Acorrectbox").innerHTML = n+"Bbox";
+        document.getElementById("1Bcorrectbox").innerHTML = n+"Bbox";
+        document.getElementById("1Ccorrectbox").innerHTML = n+"Bbox";
+        document.getElementById("1Dcorrectbox").innerHTML = n+"Bbox"; }
+       
+    
+     var opC = document.getElementById("Ciscorrect");   
+        if(opC.checked==true)
+        {document.getElementById("1Acorrectbox").innerHTML =  n+"Cbox";
+        document.getElementById("1Bcorrectbox").innerHTML = n+"Cbox";
+        document.getElementById("1Ccorrectbox").innerHTML = n+"Cbox";
+        document.getElementById("1Dcorrectbox").innerHTML = n+"Cbox";}
+       
+     var opD = document.getElementById("Discorrect");   
+        if(opD.checked==true)
+        {document.getElementById("1Acorrectbox").innerHTML =n+"Dbox";
+        document.getElementById("1Bcorrectbox").innerHTML  =n+"Dbox";
+        document.getElementById("1Ccorrectbox").innerHTML  =n+"Dbox";
+        document.getElementById("1Dcorrectbox").innerHTML  =n+"Dbox";}
+
+var correctexpinput=document.getElementById("1correctexp").value;
+  
+document.getElementById("1correctexpcode").innerHTML = correctexpinput;
+
+var wrongexpinput=document.getElementById("1wrongexp").value;
+  
+document.getElementById("1wrongexpcode").innerHTML = wrongexpinput;  
+
+
+ 
+    
+    
+    
+if(opA.checked==true)         {document.getElementById("1Aexp").innerHTML = n+"correctexp";         document.getElementById("1Bexp").innerHTML = n+"wrongexp";         document.getElementById("1Cexp").innerHTML = n+"wrongexp";         document.getElementById("1Dexp").innerHTML = n+"wrongexp";}    
+    
+    
+        if(opB.checked==true)        {document.getElementById("1Aexp").innerHTML = n+"wrongexp";         document.getElementById("1Bexp").innerHTML = n+"correctexp";         document.getElementById("1Cexp").innerHTML = n+"wrongexp";         document.getElementById("1Dexp").innerHTML = n+"wrongexp";}          
+          
+          
+if(opC.checked==true)   
+  
+{document.getElementById("1Aexp").innerHTML = n+"wrongexp";       document.getElementById("1Bexp").innerHTML =  n+"wrongexp";       document.getElementById("1Cexp").innerHTML = n+"correctexp";         document.getElementById("1Dexp").innerHTML =  n+"wrongexp";}                     
+  
+if(opD.checked==true) 
+{document.getElementById("1Aexp").innerHTML = n+"wrongexp";      document.getElementById("1Bexp").innerHTML = n+"wrongexp";        document.getElementById("1Cexp").innerHTML =  n+"wrongexp";        document.getElementById("1Dexp").innerHTML = n+"correctexp";}                  
+             
+return false;  
+    
+  }
+  
+  
+  
+  
+</script>
+
+    
+</div>  
+
+  <div style="text-align: right;"> <a href="#top">
+    Back to top</a></div> 
+
+
+<style>
+div.scroll { 
+
+
+margin: 4px, 4px;
+padding: 4px;             
+background-color: silver;           
+width: 100%;             
+height: 200px;             
+overflow-x: auto;             
+overflow-y: auto;             
+white-space: nowrap;  
+  } 
+  
+</style> 
+
+
