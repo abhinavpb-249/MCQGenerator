@@ -11,3 +11,10 @@ Just Type the question and options, mark the correct one and enter. An Html code
 <li>If the user clicks on the wrong answer, the correct answer will be immediately displayed with green.</li>
 
 </ul>
+
+<hr>
+
+<b> Working </b>
+
+The output is an HTML code to produce an MCQ, and the questions and options are changed according to the user input via innerHTML.
+
