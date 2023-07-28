@@ -25,25 +25,26 @@
 
 
     <div class="border-box">
-      <div id="1Abox"> <input id="1Ainput"
-          name="option" type=radio onclick='show("1Ainput","1Abox", "1Abox","1correctexp")'> <label for="1Ainput">
+      <div id="1Abox"> <input id="1Ainput" name="option" type=radio
+          onclick='show("1Ainput","1Abox", "1Abox","1correctexp")'> <label for="1Ainput">
           Object-Oriented </label> </div>
-      <div id="1Bbox"> <input id="1Binput"
-          name="option" type=radio onclick='show("1Binput", "1Bbox", "1Abox","1wrongexp")'> <label for="1Binput"> Object
+      <div id="1Bbox"> <input id="1Binput" name="option" type=radio
+          onclick='show("1Binput", "1Bbox", "1Abox","1wrongexp")'> <label for="1Binput"> Object
           Based </label> </div>
-      <div id="1Cbox"> <input id="1Cinput"
-          name="option" type=radio onclick='show("1Cinput","1Cbox","1Abox","1wrongexp")'> <label for="1Cinput"> Procedural
+      <div id="1Cbox"> <input id="1Cinput" name="option" type=radio
+          onclick='show("1Cinput","1Cbox","1Abox","1wrongexp")'> <label for="1Cinput"> Procedural
         </label> </div>
-      <div id="1Dbox"> <input id="1Dinput"
-          name="option" type=radio onclick='show("1Dinput","1Dbox","1Abox","1wrongexp")'> <label for="1Dinput">None of the
+      <div id="1Dbox"> <input id="1Dinput" name="option" type=radio
+          onclick='show("1Dinput","1Dbox","1Abox","1wrongexp")'> <label for="1Dinput">None of the
           above </label> </div>
     </div>
 
 
-    <div id="1correctexp" style="background:white; display:none; "> Correct </div>
-    <div id="1wrongexp" style="background:white; display:none; "> Wrong </div>
+    <div id="1correctexp" style="display:none; "> Correct </div>
+    <div id="1wrongexp" style="display:none; "> Wrong </div>
+
     <script type="text/javascript" language="javascript"
-      charset="utf-8"> function show(input, Wbox, Cbox, exp) { var answer = document.getElementById(input); var x = document.getElementById(exp); if (answer.checked == true) { document.getElementById(Wbox).style.backgroundColor = "#FAA0A0"; document.getElementById(Cbox).style.backgroundColor = "#b0f8b0"; } if (x.style.display === "none") { x.style.display = "block"; } } </script>
+      charset="utf-8" src="demo.js" defer></script>
 
     <!-- Demo -->
 
@@ -209,9 +210,9 @@
     </div>
 
     <a href="#questioncreator">
-        <button id="nextbutton" onclick="change()" style="display: none;" class="btn">
-          Add another Question
-        </button>
+      <button id="nextbutton" onclick="change()" style="display: none;" class="btn">
+        Add another Question
+      </button>
     </a>
 
 
