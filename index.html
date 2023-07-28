@@ -7,7 +7,9 @@
 
 <body>
 
-  <p> You can use the <a href="#questioncreator">question generator</a> given below to make your website more
+  <h1>MCQ Generator</h1>
+
+  <p> You can use the question generator given below to make your website more
     interactive.
     <br /> A demo is given below :
   </p>
@@ -58,38 +60,27 @@
     <h2 id="questioncreator"> Question no.<span class="one">1</span> </h2>
 
     <p>
-      <input id="question"
-        onblur="if(this.value==''){ this.value='Type your question here...'; this.style.color='#BBB';}"
-        onfocus="if(this.value=='Type your question here...'){ this.value=''; this.style.color='#000';}"
-        style="color: #bbbbbb;" type="text" value="Type your question here..." />
+      <input id="question" type="text" placeholder="Type your question here..." />
     </p>
 
 
     <p><label>A)</label>
-      <input id="firstoption" onblur="if(this.value==''){ this.value='Option A'; this.style.color='#BBB';}"
-        onfocus="if(this.value=='Option A'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;"
-        type="text" value="Option A" />
+      <input id="firstoption" type="text" placeholder="Option A" />
     </p>
 
 
     <p><label>B)</label>
-      <input id="secondoption" onblur="if(this.value==''){ this.value='Option B'; this.style.color='#BBB';}"
-        onfocus="if(this.value=='Option B'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;"
-        type="text" value="Option B" />
+      <input id="secondoption" type="text" placeholder="Option B" />
 
     </p>
 
     <p><label>C)</label>
-      <input id="thirdoption" onblur="if(this.value==''){ this.value='Option C'; this.style.color='#BBB';}"
-        onfocus="if(this.value=='Option C'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;"
-        type="text" value="Option C" />
+      <input id="thirdoption" type="text" placeholder="Option C" />
     </p>
 
 
     <p><label>D)</label>
-      <input id="fourthoption" onblur="if(this.value==''){ this.value='Option D'; this.style.color='#BBB';}"
-        onfocus="if(this.value=='Option D'){ this.value=''; this.style.color='#000';}" style="color: #bbbbbb;"
-        type="text" value="Option D" />
+      <input id="fourthoption" type="text" placeholder="Option D" />
     </p>
 
     <p>Which is the correct answer? </p>
@@ -117,7 +108,7 @@
     </p>
 
 
-    <button onclick="showhtml()" style="background: green; color: white;"> Done </button>
+    <button onclick="showhtml()" class="btn"> Done </button>
 
 
     <hr />
