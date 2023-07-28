@@ -1,0 +1,11 @@
+.border-box{
+    width: fit-content;
+}
+
+.border-box div {
+    background:white;
+    font-size:20px;
+    padding:10px;
+    border: 2px solid black;
+    width: 100%;
+}
