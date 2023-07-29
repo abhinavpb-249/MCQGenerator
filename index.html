@@ -26,8 +26,8 @@
 
     <div class="border-box">
       <div id="1Abox"> <input id="1Ainput" name="option" type=radio
-          onclick='show("1Ainput","1Abox", "1Abox","1correctexp")'> <label for="1Ainput">
-          Object-Oriented </label> </div>
+          onclick='show("1Ainput","1Abox", "1Abox","1correctexp")'> <label for="1Ainput"> Object-Oriented
+          </label> </div>
       <div id="1Bbox"> <input id="1Binput" name="option" type=radio
           onclick='show("1Binput", "1Bbox", "1Abox","1wrongexp")'> <label for="1Binput"> Object
           Based </label> </div>
@@ -69,36 +69,30 @@
 
     <p><label>A)</label>
       <input id="firstoption" type="text" placeholder="Option A" />
+      <label> <input id="Aiscorrect" name="option" type="radio" />correct</label>
     </p>
 
 
     <p><label>B)</label>
       <input id="secondoption" type="text" placeholder="Option B" />
+      <label> <input id="Biscorrect" name="option" type="radio" />correct </label>
     </p>
 
     <p><label>C)</label>
       <input id="thirdoption" type="text" placeholder="Option C" />
+      <label> <input id="Ciscorrect" name="option" type="radio" />correct </label>
     </p>
 
 
     <p><label>D)</label>
       <input id="fourthoption" type="text" placeholder="Option D" />
+      <label> <input id="Discorrect" name="option" type="radio" />correct</label>
     </p>
 
-    <p>Which is the correct answer? </p>
 
 
-    <p><label>
-        <input id="Aiscorrect" name="option" type="radio" /> option A is correct</label></p>
 
-    <p><label>
-        <input id="Biscorrect" name="option" type="radio" />option B is correct </label></p>
 
-    <p><label>
-        <input id="Ciscorrect" name="option" type="radio" />option C is correct </label></p>
-
-    <p><label>
-        <input id="Discorrect" name="option" type="radio" /> option D is correct</label></p>
 
 
     <p><label> Text to show if the user selects the correct answer(Optional):</label>
@@ -122,61 +116,74 @@
 
       <div class="scroll" id="htmloutput">
 
+        &lt;style&gt;
+            .border-box{
+                width: fit-content;
+            }
+            
+            .border-box div {
+                background:white;
+                font-size:20px;
+                padding:10px;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin-bottom: 5px;
+                width: 100%;
+            }
+        &lt;/style&gt;
+
         &lt;div style="background:white;"&gt;
 
         &lt;p&gt;<span id="questioncode"></span> &lt;/p&gt;
 
+        &lt;div class="border-box"&gt;
+          &lt;div id="<span class="one">1</span>Abox"&gt;
+          &lt;input id="<span class="one">1</span>Ainput" name="option" type=radio onclick='show("<span
+            class="one">1</span>Ainput","<span class="one">1</span>Abox", "<span id="1Acorrectbox"></span>","<span
+            id="1Aexp"></span>")'&gt;
+          &lt;label for="<span class="one">1</span>Ainput"&gt;
 
-        &lt;div id="<span class="one">1</span>Abox" style="background:white; font-size:20px;padding:10px;border: 2px
-        solid black;" &gt;
-        &lt;input id="<span class="one">1</span>Ainput" name="option" type=radio onclick='show("<span
-          class="one">1</span>Ainput","<span class="one">1</span>Abox", "<span id="1Acorrectbox"></span>","<span
-          id="1Aexp"></span>")'&gt;
-        &lt;label for="<span class="one">1</span>Ainput"&gt;
+          <span id="optionAcode"> </span>
+          &lt;/label&gt;
+          &lt;/div&gt;
 
-        <span id="optionAcode"> </span>
-        &lt;/label&gt;
+          &lt;div id="<span class="one">1</span>Bbox"&gt;
+          &lt;input id="<span class="one">1</span>Binput" name="option" type=radio onclick='show("<span
+            class="one">1</span>Binput", "<span class="one">1</span>Bbox", "<span id="1Bcorrectbox"></span>","<span
+            id="1Bexp"></span>")' &gt;
+          &lt;label for="<span class="one">1</span>Binput"&gt;
+
+          <span id="optionBcode"> </span>
+          &lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div id="<span class="one">1</span>Cbox"&gt;
+          &lt;input id="<span class="one">1</span>Cinput" name="option" type=radio onclick='show("<span
+            class="one">1</span>Cinput","<span class="one">1</span>Cbox","<span id="1Ccorrectbox"></span>","<span
+            id="1Cexp"></span>")'&gt;
+          &lt;label for="<span class="one">1</span>Cinput"&gt;
+          <span id="optionCcode"></span>
+          &lt;/label&gt;
+          &lt;/div&gt;
+
+
+          &lt;div id="<span class="one">1</span>Dbox"&gt;
+          &lt;input id="<span class="one">1</span>Dinput" name="option" type=radio onclick='show("<span
+            class="one">1</span>Dinput","<span class="one">1</span>Dbox","<span id="1Dcorrectbox"></span>","<span
+            id="1Dexp"></span>")'&gt;
+          &lt;label for="<span class="one">1</span>Dinput"&gt;<span id="optionDcode"> </span> &lt;/label&gt;
+          &lt;/div&gt;
+
         &lt;/div&gt;
 
-        &lt;div id="<span class="one">1</span>Bbox" style="background:white; font-size:20px;padding:10px;border: 2px
-        solid black;" &gt;
-        &lt;input id="<span class="one">1</span>Binput" name="option" type=radio onclick='show("<span
-          class="one">1</span>Binput", "<span class="one">1</span>Bbox", "<span id="1Bcorrectbox"></span>","<span
-          id="1Bexp"></span>")' &gt;
-        &lt;label for="<span class="one">1</span>Binput"&gt;
 
-        <span id="optionBcode"> </span>
-        &lt;/label&gt;
-        &lt;/div&gt;
-
-        &lt;div id="<span class="one">1</span>Cbox" style="background:white; font-size:20px;padding:10px;border: 2px
-        solid black;" &gt;
-        &lt;input id="<span class="one">1</span>Cinput" name="option" type=radio onclick='show("<span
-          class="one">1</span>Cinput","<span class="one">1</span>Cbox","<span id="1Ccorrectbox"></span>","<span
-          id="1Cexp"></span>")'&gt;
-        &lt;label for="<span class="one">1</span>Cinput"&gt;
-        <span id="optionCcode"></span>
-        &lt;/label&gt;
-        &lt;/div&gt;
-
-
-        &lt;div id="<span class="one">1</span>Dbox" style="background:white; font-size:20px;padding:10px;border: 2px
-        solid black;" &gt;
-        &lt;input id="<span class="one">1</span>Dinput" name="option" type=radio onclick='show("<span
-          class="one">1</span>Dinput","<span class="one">1</span>Dbox","<span id="1Dcorrectbox"></span>","<span
-          id="1Dexp"></span>")'&gt;
-        &lt;label for="<span class="one">1</span>Dinput"&gt;<span id="optionDcode"> </span> &lt;/label&gt;
-        &lt;/div&gt;
-
-
-
-        &lt;div id="<span class="one">1</span>correctexp" style="background:white; display:none; " &gt;
+        &lt;div id="<span class="one">1</span>correctexp" &gt;
 
         <span id="1correctexpcode"> </span>
 
         &lt;/div&gt;
 
-        &lt;div id="<span class="one">1</span>wrongexp" style="background:white; display:none; " &gt;
+        &lt;div id="<span class="one">1</span>wrongexp" &gt;
 
 
         <span id="1wrongexpcode"> </span>
